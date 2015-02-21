@@ -1,4 +1,4 @@
-
+##I want to know whether my commit is working
 
 ## This function creates a special matrix object that can cache its inverse
 ## This function only works for a square matrix
