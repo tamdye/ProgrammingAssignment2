@@ -1,11 +1,17 @@
 ##I want to know whether my commit is working
 
-## This function creates a special matrix object that can cache its inverse
+## This function creates a matrix object that can cache its inverse
 ## This function only works for a square matrix
 
 makeMatrix <- function(x = matrix()) {
+        ## makeMatrix is a function that takes a matrix as input.  the
+        ## input matrix must be square in order to calculate an inverse
+        ## with this function.
         d <- dim(x)
         if(d[1]!=d[2]) {message("the input matrix must be square")}
+        ## these two lines compare the number of columns in the matrix to
+        ## the number of row in the matrix.  if they are not the same,
+        ## return a message.
         i <- NULL
         ##initializes the value for i
         set <- function(y) {
@@ -118,3 +124,21 @@ special.solved.2 <- cacheSolve(special.matrix)
 identical(mymatrix.inverse, special.solved.1) & identical(mymatrix.inverse, special.solved.2)
 #
 # should return TRUE
+
+
+
+greener <- function(q,r) {
+        blah <- q
+        print(blah)
+        if(is.null(q)) {
+                message("getting cached data")
+                return(q)
+        }
+        dater <- r
+        print(dater)
+        tater <- mean(q,r)
+        blah
+}
+
+
+
